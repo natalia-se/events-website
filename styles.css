@@ -1,0 +1,230 @@
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+.hero {
+  background-image: url("./Images/hero2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+}
+
+.heroNotHome {
+  height: 15vh;
+}
+
+.heroDetail {
+  background-image: url("./Images/event1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+}
+
+.heroText {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  border-color: black;
+}
+
+.heroButton {
+  background-color: #300d50;
+  color: white;
+}
+
+.heroButton:hover {
+  background-color: #e8349d;
+}
+
+.navigation {
+  display: flex;
+  float: right;
+  padding-top: 1.5em;
+}
+
+.navigationItem {
+  list-style-type: none;
+}
+
+.navigationItem a {
+  margin: 15px;
+  color: white;
+  font-size: large;
+  text-decoration: none;
+}
+
+.cardGallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 20px;
+  flex: 0 0 16rem;
+}
+
+.cardInfo {
+  margin: 8px;
+}
+
+.cardImage {
+  width: 100%;
+}
+
+.cardImage:hover {
+  width: calc(16rem + 10px);
+}
+
+.descriptionDetail {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  padding: 2rem;
+}
+
+.description {
+  align-self: center;
+  flex-basis: 2rem;
+}
+
+input[type=text],
+input[type=date],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.file {
+  font-family: "Open Sans", sans-serif;
+}
+
+input[type=date]:invalid::-webkit-datetime-edit {
+  color: #999;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #541aa5;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  box-sizing: border-box;
+}
+
+input[type=submit]:hover {
+  background-color: #2f0b61;
+}
+
+.formContainer {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.contactForm {
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+
+.col-25 {
+  float: left;
+  margin-top: 6px;
+  width: 25%;
+}
+
+.col-75 {
+  float: left;
+  margin-top: 6px;
+  width: 75%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.fileContainer {
+  display: flex;
+}
+
+.containerCEO {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageCEO {
+  margin: 30px;
+  width: 30rem;
+  border-radius: 50px;
+}
+
+.imageTeam {
+  max-width: 100vw;
+}
+
+.popUp {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popUp .popUpText {
+  visibility: hidden;
+  width: 300px;
+  background-color: #f2f2f2;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+.popUp .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+.popUpButton {
+  margin: 10px auto;
+}
+
+.aboutInfo {
+  padding: 8px 50px;
+}
+
+/*# sourceMappingURL=styles.css.map */

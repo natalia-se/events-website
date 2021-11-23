@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create event</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="hero heroNotHome">
+      <div class="navContainer">
+        <ul class="navigation">
+          <li class="navigationItem">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="navigationItem">
+            <a href="events.html">All events</a>
+          </li>
+          <li class="navigationItem">
+            <a href="createEvent.html">Create event</a>
+          </li>
+          <li class="navigationItem">
+            <a href="about.html">About us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="formContainer eventForm">
+      <form>
+        <div class="row">
+          <div class="col-25">
+            <label for="name">Name</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Event name .."
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="date">Date</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="date"
+              id="date"
+              name="date"
+              placeholder="Event date.."
+              required
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="description">Description</label>
+          </div>
+          <div class="col-75">
+            <textarea
+              id="description"
+              name="description"
+              placeholder="Write short description.."
+              style="height: 100px"
+            ></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="agenda">Agenda</label>
+          </div>
+          <div class="col-75">
+            <textarea
+              id="agenda"
+              name="agenda"
+              placeholder="Write agenda.."
+              style="height: 100px"
+            ></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="images">Images</label>
+          </div>
+          <div class="col-75">
+            <div class="fileContainer">
+              <input type="file" class="file" name="file" />
+              <input type="file" class="file" name="file" />
+              <input type="file" class="file" name="file" />
+              <input type="file" class="file" name="file" />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="category">Category</label>
+          </div>
+          <div class="col-75">
+            <select id="category" name="category">
+              <option value="music">Music</option>
+              <option value="theatre">Theatre</option>
+              <option value="show">Show</option>
+            </select>
+          </div>
+        </div>
+
+        <br />
+        <div class="row">
+          <input type="submit" value="Create" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

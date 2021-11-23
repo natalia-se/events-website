@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="hero heroNotHome">
+      <div class="navContainer">
+        <ul class="navigation">
+          <li class="navigationItem">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="navigationItem">
+            <a href="events.html">All events</a>
+          </li>
+          <li class="navigationItem">
+            <a href="createEvent.html">Create event</a>
+          </li>
+          <li class="navigationItem">
+            <a href="about.html">About us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main">
+      <div class="aboutInfo">
+        <h1>Welcome to events.</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad nulla quo
+          veniam ullam necessitatibus. Sunt consequuntur, nihil in similique
+          dolorem vel ducimus ratione maxime sequi delectus doloribus neque,
+          explicabo ullam!
+        </p>
+        <h2>Our story</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec
+          euismod arcu. Fusce viverra consequat ipsum, vitae pretium magna
+          ornare ut. Vestibulum eu porttitor neque. Donec vel luctus nisi.
+          Suspendisse porta ligula non nulla faucibus, eget placerat ex
+          tincidunt. Donec placerat, eros in posuere convallis, orci diam
+          pulvinar orci, ut luctus dolor elit et est. Sed nulla dui, luctus nec
+          lectus id, hendrerit viverra arcu. Duis id luctus massa. Cras
+          porttitor vehicula leo, sit amet varius nulla finibus venenatis.
+          Maecenas lobortis risus vel cursus dapibus. Nulla facilisi. Sed quis
+          diam dictum, elementum velit et, blandit lectus. Vestibulum nec semper
+          mi, et semper nunc.
+        </p>
+        <h2>Why us?</h2>
+        <p>
+          Proin et mi interdum, porttitor mauris quis, aliquam ipsum.
+          Suspendisse vitae dolor consequat, ultricies nulla imperdiet, auctor
+          tortor. Donec condimentum nibh in enim maximus, id placerat lorem
+          imperdiet. Sed efficitur felis dictum bibendum dictum. Morbi nec
+          finibus nulla. Vivamus ultrices lectus vel hendrerit pulvinar. Etiam
+          ut nulla neque. Aenean accumsan lectus nec risus consectetur
+          vestibulum. Duis dictum ultrices ligula, quis convallis diam malesuada
+          quis. Nullam pulvinar facilisis efficitur. Maecenas sodales vitae
+          augue at imperdiet. Morbi lorem sapien, pellentesque ac turpis eu,
+          finibus facilisis ex. Suspendisse fermentum nulla nisi, in consectetur
+          sapien convallis nec. Etiam sed gravida leo. Mauris pellentesque
+          aliquam lorem, et molestie risus.
+        </p>
+      </div>
+      <div class="team">
+        <h2>Our team</h2>
+        <div class="containerCEO">
+          <img class="imageCEO" src="Images/ceo.jpg" alt="Photo CEO" />
+          <div class="textCEO">
+            <p>CEO: Julia Jonson</p>
+            <p><a href="tel:+46760000000">+46 760 00 000</a></p>
+            <p><a href="mailto:someone@example.com">someone@example.com</a></p>
+          </div>
+        </div>
+
+        <img class="imageTeam" src="Images/team.jpg" alt="Team" />
+      </div>
+    </div>
+
+    <div class="formContainer contactForm">
+      <form>
+        <!-- action="/thanksPage.html" -->
+        <div class="row">
+          <div class="col-25">
+            <label for="name">Name</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name .."
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="email">Email</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Enter your email.."
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="message">Message</label>
+          </div>
+          <div class="col-75">
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Write short message.."
+              style="height: 100px"
+            ></textarea>
+          </div>
+        </div>
+
+        <br />
+        <div class="row">
+          <input type="submit" value="Send" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
